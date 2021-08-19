@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Flying Time</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="../style.css">
+		<style>
+			#disHead {
+				margin-bottom: 3px;
+			}
+
+			hr {
+				border-color: #eaeaea;
+			}
+
+			#resBox {
+				display: flex;
+				align-items: center;
+				grid-gap: 12px;
+			}
+		</style>
+	</head>
+
+	<body>
+		Get distance <a href="https://eberronmap.johnarcadian.com/" target="_blank">here</a><br>
+		<hr>
+		<h3 id="disHead">Distance</h3>
+		<input type="text" id="distance">
+
+		<div id="resBox">
+			<button id="button">Calculate</button>
+			<h3>Flying time: <span id="result"></span></h3>
+		</div>
+	</body>
+	<script>
+		$(document).ready(function () {
+			$("#button").click(function () {
+				let exact = $("#distance").val() / 25;
+				let round = Math.round(exact);
+				$("#result").html(`${round} hours`);
+			});
+		});
+	</script>
+
+</html>
