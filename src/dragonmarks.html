@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dragonmarks</title>
+		<style>
+			table {
+				font-family: Arial, Helvetica, sans-serif;
+				border-collapse: collapse;
+			}
+
+			td,
+			th {
+				border: 1px solid #ddd;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #f2f2f2;
+			}
+
+			tr:hover {
+				background-color: #ddd;
+			}
+
+			th {
+				padding-top: 12px;
+				padding-bottom: 12px;
+				text-align: left;
+				background-color: #04AA6D;
+				color: white;
+			}
+		</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<table id="dragonmarks">
+			<thead>
+				<tr>
+					<th onclick="sortTable(0)">House</th>
+					<th onclick="sortTable(1)">Mark</th>
+					<th onclick="sortTable(2)">Guild Specialties</th>
+					<th onclick="sortTable(3)">Races</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Cannith</td>
+					<td>Making</td>
+					<td>Manufacturing</td>
+					<td>Human</td>
+				</tr>
+				<tr>
+					<td>Deneith</td>
+					<td>Sentinel</td>
+					<td>Bodyguards, mercenaries</td>
+					<td>Human</td>
+				</tr>
+				<tr>
+					<td>Ghallanda</td>
+					<td>Hospitality</td>
+					<td>Food, lodging, urban information</td>
+					<td>Halfling</td>
+				</tr>
+				<tr>
+					<td>Jorasco</td>
+					<td>Healing</td>
+					<td>Healing</td>
+					<td>Halfling</td>
+				</tr>
+				<tr>
+					<td>Kundarak</td>
+					<td>Warding</td>
+					<td>Banking, storage, prisons</td>
+					<td>Dwarf</td>
+				</tr>
+				<tr>
+					<td>Lyrandar</td>
+					<td>Storm</td>
+					<td>Air and sea transportation</td>
+					<td>Half-Elf</td>
+				</tr>
+				<tr>
+					<td>Medani</td>
+					<td>Detection</td>
+					<td>Bodyguards, investigation, risk management</td>
+					<td>Half-Elf</td>
+				</tr>
+				<tr>
+					<td>Orien</td>
+					<td>Passage</td>
+					<td>Land transportation</td>
+					<td>Human</td>
+				</tr>
+				<tr>
+					<td>Phiarlan</td>
+					<td>Shadow</td>
+					<td>Entertainment, espionage</td>
+					<td>Elf</td>
+				</tr>
+				<tr>
+					<td>Sivis</td>
+					<td>Scribing</td>
+					<td>Communication, translation, verification</td>
+					<td>Gnome</td>
+				</tr>
+				<tr>
+					<td>Tharashk</td>
+					<td>Finding</td>
+					<td>Bounty hunting, investigation, prospecting</td>
+					<td>Half-Orc, Human</td>
+				</tr>
+				<tr>
+					<td>Thuranni</td>
+					<td>Shadow</td>
+					<td>Entertainment, assassination</td>
+					<td>Elf</td>
+				</tr>
+				<tr>
+					<td>Vadalis</td>
+					<td>Handling</td>
+					<td>Animal training and breeding</td>
+					<td>Human</td>
+				</tr>
+			</tbody>
+		</table>
+		<script src="index.js"></script>
+	</body>
+
+</html>
