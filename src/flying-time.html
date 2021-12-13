@@ -7,31 +7,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Flying Time</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="style.css">
 		<style>
-			#disHead {
-				margin-bottom: 3px;
-			}
 
-			hr {
-				border-color: #eaeaea;
-			}
-
-			#resBox {
-				display: flex;
-				align-items: center;
-				grid-gap: 12px;
-			}
 		</style>
 	</head>
 
 	<body>
 		Get distance <a href="https://eberronmap.johnarcadian.com/" target="_blank">here</a><br>
-		<hr>
-		<h3 id="disHead">Distance</h3>
+		<hr class="ruler">
+		<h3 id="distance-head">Distance</h3>
 		<input type="text" id="distance">
 
-		<div id="resBox">
+		<div id="result-box">
 			<button id="button">Calculate</button>
 			<h3>Flying time: <span id="result"></span></h3>
 		</div>
