@@ -29,26 +29,26 @@ button:active {
 	transform: scale(0.98);
 }
 
-.sortable-table {
+.table {
 	font-family: Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
 }
 
-.sortable-table td,
+.table td,
 th {
 	border: 1px solid #ddd;
 	padding: 8px;
 }
 
-.sortable-table tr:nth-child(even) {
+.table tr:nth-child(even) {
 	background-color: #f2f2f2;
 }
 
-.sortable-table tr:hover {
+.table tr:hover {
 	background-color: #ddd;
 }
 
-.sortable-table th {
+.table th {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	text-align: left;
